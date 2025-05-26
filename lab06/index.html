@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Photo Gallery</title>
+	<style>
+		body{
+			background-image: url(background.jpg);
+			background-size: 75%;
+		}
+		#header{
+			background-color: white;
+			width: 300px;
+			margin: 0px auto;
+			border-radius: 30px;
+		}
+		h1{
+			color: #03eccf;
+			text-align: center;
+			font-size: 36px;
+    		font-family: "Papyrus", fantasy;
+
+		}
+		img{
+			width: 300px;
+			height: 225px;
+			border-radius: 40px;
+			overflow: hidden;
+		}
+		.thumbnail-container{
+			float: left;
+			margin: 0 30px;
+			width: 300px;
+		}
+		.clearfloat{
+			clear: both;
+		}
+		#container{
+			width: 1080px;
+			margin: 100px auto;
+			border-radius: 30px;
+			padding: 50px 0;
+			overflow: hidden;
+		}
+		.thumbnail-container p{
+			padding: 10px 0;
+			font-size: 20px;
+			text-align: center;
+			visibility: hidden;
+		}
+		.thumbnail-container img:hover+p{
+			background-color: rgba(255, 255, 255, 0.9);
+			border-radius: 10px;
+			visibility: visible;
+		}
+		.thumbnail-container img:hover{
+			outline: 4px solid blueviolet;
+
+		}
+
+	</style>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	<h1>CBC & FYX</h1>
+	</div>
+	<div class="thumbnail-container">
+		<img src="hdl.jpg" alt="海底捞">
+		<p>“比火锅更热的，是你看我的眼神”</p>
+	</div>
+	<div class="thumbnail-container">
+		<img src="jingshan.jpg" alt="景山">
+		<p>“故宫红墙外，风吹过你的发，落日余晖刚刚好”</p>
+	</div>
+	<div class="thumbnail-container">
+		<img src="lyg.jpg" alt="连云港">
+		<p>“夏天的风 我永远记得<br>清清楚楚的说你爱我”</p>
+	</div>
+	<div class="clearfloat"></div>
+	<div class="thumbnail-container">
+		<img src="train.jpg" alt="火车上">
+		<p>“在路上的日子最美，因为身边的风景是你。”</p>
+	</div>
+	<div class="thumbnail-container">
+		<img src="luoyang.jpg" alt="洛阳">
+		<p>“十三朝古都的风，吹过你的发，像历史在轻声诉说”</p>
+	</div>
+	<div class="thumbnail-container">
+		<img src="ski.jpg" alt="滑雪">
+		<p>“在冰雪世界里，我们是彼此的热源”</p>
+	</div>
+
+</div>
+
+</body>
+</html>

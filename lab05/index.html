@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subway Order Form</title>
+	<style>
+	body{
+		background-image: url(background.jpg);
+		background-size: 20%;
+		background-repeat: repeat;
+	}
+	h1{
+		font-size: 40px;
+	}
+	#content{
+		background-color: 	#f5e6ca;
+		width: 800px;
+		margin: 100px auto;
+	}
+	.form-row{
+		padding: 10px;
+	}
+	button {
+			padding: 10px 20px;
+	}
+	#submit{
+		background-color: #FFD700;
+	    color: black;
+	    border-color: #d4af37;
+	}
+	#reset{
+		background-color: #007A33;
+	    color: white;
+	    border-color: #005a23;
+	}
+	</style>
+</head>
+<body>
+	<div id="content">
+	<h1>Subway Order Form</h1>
+	
+	<form action="confirmation.html">
+		<div class="form-row">
+			<label for="name">Your name:</label>
+			<input type="text" id="name" placeholder="Tommy Trojan" required>
+		</div>
+
+		<div class="form-row">
+			<label for="email">Your email</label>
+			<input type="email" id="email" placeholder="ttrojan@usc.edu" required>
+		</div>
+
+	    <div class="form-row">
+		    <label>Choose Your Size:</label>
+		    <input id="size-6" type="radio" name="size" value="6-inch">
+		    <label for="size-6">6-inch</label>
+		    <input id="size-footlong" type="radio" name="size" value="footlong">
+		    <label for="size-footlong">Footlong</label>
+		    <input id="other" type="radio" name="size" value="other">
+		    <label for="other">other</label>
+		</div>
+
+		<div class="form-row">
+	        <label for="bread" >Choose Your Bread:</label>
+	        <select id="bread">
+	            <option value="artisan_italian">Artisan Italian</option>
+	            <option value="white">White</option>
+	            <option value="wheat">Wheat</option>
+	            <option value="honey_oat">Honey Oat</option>
+	        </select>
+	    </div>
+
+	    <div class="form-row">
+            <label>Choose Your Vegetables:</label>
+            <input id="lettuce" type="checkbox" name="veggies" value="lettuce">
+            <label for="lettuce">Lettuce</label>
+            <input id="spinach" type="checkbox" name="veggies" value="spinach">
+            <label for="spinach">Spinach</label>
+            <input id="tomatoes" type="checkbox" name="veggies" value="tomatoes">
+            <label for="tomatoes">Tomatoes</label>
+            <input id="cucumbers" type="checkbox" name="veggies" value="cucumbers">
+            <label for="cucumbers">Cucumbers</label>
+            <input id="pickles" type="checkbox" name="veggies" value="pickles">
+            <label for="pickles">Pickles</label>
+            <input id="green-peppers" type="checkbox" name="veggies" value="green_peppers">
+            <label for="green-peppers">Green Peppers</label>
+            <input id="black-olives" type="checkbox" name="veggies" value="black_olives">
+            <label for="black-olives">Black Olives</label>
+            <input id="red-onions" type="checkbox" name="veggies" value="red_onions">
+            <label for="red-onions">Red Onions</label>
+            <input id="jalapenos" type="checkbox" name="veggies" value="jalapenos">
+            <label for="jalapenos">Jalapeños</label>
+            <input id="banana-peppers" type="checkbox" name="veggies" value="banana_peppers">
+            <label for="banana-peppers">Banana Peppers</label>
+        </div>
+
+        <div class="form-row">
+		    <label>Select Your Sauces:</label>
+
+		    <input id="sauce-oil" type="checkbox" name="sauce" value="oil">
+		    <label for="sauce-oil">Oil</label>
+
+		    <input id="sauce-red-wine-vinegar" type="checkbox" name="sauce" value="red_wine_vinegar">
+		    <label for="sauce-red-wine-vinegar">Red Wine Vinegar</label>
+
+		    <input id="sauce-mayo" type="checkbox" name="sauce" value="mayo">
+		    <label for="sauce-mayo">Regular Mayonnaise</label>
+
+		    <input id="sauce-mustard" type="checkbox" name="sauce" value="mustard">
+		    <label for="sauce-mustard">Yellow Mustard</label>
+
+		    <input id="sauce-honey-mustard" type="checkbox" name="sauce" value="honey_mustard">
+		    <label for="sauce-honey-mustard">Honey Mustard</label>
+
+		    <input id="sauce-cheddar-cheese" type="checkbox" name="sauce" value="cheddar_cheese">
+		    <label for="sauce-cheddar-cheese">Cheddar Cheese</label>
+
+		    <input id="sauce-bbq" type="checkbox" name="sauce" value="bbq">
+		    <label for="sauce-bbq">BBQ</label>
+
+		    <input id="sauce-sriracha" type="checkbox" name="sauce" value="sriracha">
+		    <label for="sauce-sriracha">Creamy Sriracha</label>
+
+		    <input id="sauce-sweet-onion" type="checkbox" name="sauce" value="sweet_onion">
+		    <label for="sauce-sweet-onion">Sweet Onion Teriyaki</label>
+
+		    <input id="sauce-peppercorn-ranch" type="checkbox" name="sauce" value="peppercorn_ranch">
+		    <label for="sauce-peppercorn-ranch">Peppercorn Ranch</label>
+
+		    <input id="sauce-baja-chipotle" type="checkbox" name="sauce" value="baja_chipotle">
+		    <label for="sauce-baja-chipotle">Baja Chipotle</label>
+		</div>
+
+
+		<div class="form-row">
+            <label for="comments">Additional Requests:</label>
+            <textarea id="comments" placeholder="Any special instructions?"></textarea>
+        </div>
+
+        <div class="form-row">
+            <input id="terms" type="checkbox" required>
+            <label for="terms">I accept the Terms & Conditions</label>
+        </div>
+
+        <div class="form-row">
+            <button type="submit" id="submit">Submit Order</button>
+            <button type="reset" id="reset">Clear Form</button>
+        </div>
+
+	</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery | Mark Chen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(gallery/background.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #344D67;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .thumbnail-container {
+            overflow: hidden;
+            margin: 0 -10px;
+            padding-top: 20px;
+        }
+        .thumbnail {
+            width: 31%;
+            margin: 0 1% 20px;
+            float: left;
+            text-align: center;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s, outline 0.3s;
+        }
+        .thumbnail img:hover {
+            transform: scale(1.05);
+            outline: 4px solid #A5DAF3;
+        }
+        .thumbnail p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #344D67;
+        }
+        .audio-section {
+            clear: both;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .audio-section h2 {
+            color: #344D67;
+        }
+        .audio-section p {
+            font-size: 16px;
+            color: #344D67;
+        }
+        @media (max-width: 767px) {
+            .thumbnail {
+                width: 100%;
+                margin: 0 0 20px;
+            }
+            #container {
+                margin: 50px auto;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="nav-wrapper">
+            <div id="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <h1>Gallery</h1>
+        <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img src="gallery/hdl.jpg" alt="Hot Pot">
+                <p>Hot Pot</p>
+            </div>
+            <div class="thumbnail">
+                <img src="gallery/jingshan.jpg" alt="Jingshan Park">
+                <p>Jingshan Park</p>
+            </div>
+            <div class="thumbnail">
+                <img src="gallery/lyg.jpg" alt="Lianyungang">
+                <p>Lianyungang</p>
+            </div>
+            <div class="clear"></div>
+            <div class="thumbnail">
+                <img src="gallery/train.jpg" alt="On the Train">
+                <p>On the Train</p>
+            </div>
+            <div class="thumbnail">
+                <img src="gallery/luoyang.jpg" alt="Luoyang">
+                <p>Luoyang</p>
+            </div>
+            <div class="thumbnail">
+                <img src="gallery/ski.jpg" alt="Skiing">
+                <p>Skiing</p>
+            </div>
+        </div>
+
+        <section class="audio-section">
+            <h2>Our Melody</h2>
+            <p>Click to play our memories:</p>
+            <audio controls>
+                <source src="gallery/music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </div>
+
+    <div id="footer">
+        <p>© 2025 Mark Chen Page</p>
+        <p>Last Updated: May 08 2025</p>
+    </div>
+</body>
+</html>

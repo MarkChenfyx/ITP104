@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact | Mark Chen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-row{
+            padding: 10px;
+        }
+        button {
+            padding: 10px 30px;
+            font-size: 16px;
+            margin-right: 50px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        #submit {
+            background-color: #6BBEEA;
+            color: white;
+            border: none;
+        }
+
+        #reset {
+            background-color: #A4CBAF;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="nav-wrapper">
+        <div id="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="container">
+        <h1>Contact Me</h1>
+        <form action="confirmation.html" method="get">
+            <div class="form-row">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Mark Chen" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="markchen@usc.edu" required>
+            </div>
+
+            <div class="form-row">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Say hi or ask a question">
+            </div>
+
+            <div class="form-row">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <div class="form-row">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I agree to be contacted via the provided email</label>
+            </div>
+
+            <div class="form-row button-row">    
+                <button type="reset" id="reset">Clear</button>
+                <button type="submit" id="submit">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>© 2025 Mark Chen</p>
+        <p>Last Updated: May 07 2025</p>
+    </div>
+
+</body>
+</html>
